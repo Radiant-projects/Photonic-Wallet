@@ -62,7 +62,7 @@ Photonic is a self-custodial desktop wallet made for **Radiant (RXD)** and its *
 | macOS | [Install on macOS](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/install-photonic-wallet-macos.md) |
 | Linux | [Install on Linux](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/install-photonic-wallet-linux.md) |
 
-## Popular guides
+## Popular guides.
 
 | Problem | Fix |
 |---|---|
